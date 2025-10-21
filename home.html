@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menyexempel</title>
+    <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+    <style>
+        .explanation {
+            background-color: #f8f9fa;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 5px solid #2E8B57;
+        }
+        
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h3 {
+            color: #2E8B57;
+            margin-bottom: 10px;
+        }
+        
+        .color-swatch {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            margin-right: 10px;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+        }
+        
+        .demo-menu {
+            background-color: #2E8B57;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .demo-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .demo-menu li {
+            background: #228B22;
+            padding: 8px 15px;
+            border-radius: 3px;
+        }
+        
+        .demo-menu a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Karm första sida - Förklaring av val</h1>
+        </header>
+        
+        <nav class="mainmenu">
+            <ul>
+                <li><a href="home.html">Hem</a></li>
+                <li><a href="news.html">Nyheter</a></li>
+                <li><a href="contacts.html">Kontakt</a></li>
+                <li><a href="about.html">Om</a></li>
+            </ul>
+        </nav>
+        
+        <div class="wrapper_2col">
+            <div class="leftcol">
+                <div class="explanation">
+                    <h2>Mina designval för sidan</h2>
+                    <p>Här förklarar jag de val jag gjorde för sidan och varför jag valt just dessa lösningar.</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <h3> Färgval</h3>
+                        <p><span class="color-swatch" style="background-color: #2E8B57;"></span> Huvudfärg: #2E8B57 (Mörkgrön)</p>
+                        <p><span class="color-swatch" style="background-color: #228B22;"></span> Hover-färg: #228B22 (Ljusare grön)</p>
+                        <p><strong>Varför:</strong> Jag valde färgen grönt för att jag tycker att den är snygg. 
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3> Responsiv design</h3>
+                        <p>Jag gjorde media queries för att anpassa menyn till olika skärmstorlekar.</p>
+                        <p><strong>Varför:</strong> Jag gjorde sidan så för att den ska kunna fungera på alla skärmar och på små skärmar blir menyn vertikal.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3> Sticky sida</h3>
+                        <p>Menyn följer med när man scrollar. </p>
+                        <p><strong>Varför:</strong>Det gör sidan bättre och man upplever sig bra.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3> effekter</h3>
+                        <p>Valen som t.ex hem,om osv ändra färg när man håller dem.</p>
+                        <p><strong>Varför:</strong>Gör det mer tydligt till användaren vilket sak man trycker på .</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rightcol">
+                <div class="feature-card">
+                    <h3> Layout och struktur</h3>
+                    <p><strong>Horisontell meny:</strong> Valde horisontell för att det ger bättre utnyttjande av skärmytan på desktop.</p>
+                    
+                    <div class="demo-menu">
+                        <ul>
+                            <li><a href="#">Hem</a></li>
+                            <li><a href="#">Nyheter</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Om</a></li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Border design:</strong> Jag använde borders för att skapa separation mellan valen.</p>
+                    <p><strong>Varför:</strong> Borders hjälper användaren att tydligt se var en val börjar och slutar.</p>
+                </div>
+                
+              
+            
+                <div class="feature-card">
+                    <h3> Användarupplevelse</h3>
+                    <p><strong>Tydliga effekter:</strong> Användaren ser direkt vilken val som är aktiv</p>
+                    <p><strong> design:</strong> Samma meny på alla sidor</p>
+                    <p><strong>Lättläst :</strong> Enkelt att see texten </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>All rights reserved - &#169; Copyright | Karm sida</p>
+        </footer>
+    </div>
+</body>
+</html>
